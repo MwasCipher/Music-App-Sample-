@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         Button playButton = findViewById(R.id.play_button);
         Button pauseButton = findViewById(R.id.pause_button);
         Button fastForwardButton = findViewById(R.id.fast_forward_button);
+        Button rewindButton = findViewById(R.id.rewind_button);
 
         //Instantiate Media Player Class
 
@@ -54,6 +55,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                int position = mediaPlayer.getCurrentPosition();
                 mediaPlayer.seekTo(position + 5000);
+            }
+        });
+
+        rewindButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int position = mediaPlayer.getCurrentPosition();
+                mediaPlayer.seekTo(position - 5000);
             }
         });
     }

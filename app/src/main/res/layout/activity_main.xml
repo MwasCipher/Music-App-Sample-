@@ -24,7 +24,13 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=">>"
+        android:text="forward"
         android:id="@+id/fast_forward_button"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="rewind"
+        android:id="@+id/rewind_button"/>
 
 </LinearLayout>
