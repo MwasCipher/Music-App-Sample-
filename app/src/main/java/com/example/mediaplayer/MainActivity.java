@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                int position = mediaPlayer.getCurrentPosition();
-                mediaPlayer.seekTo(position + 5);
+                mediaPlayer.seekTo(position + 5000);
             }
         });
     }
